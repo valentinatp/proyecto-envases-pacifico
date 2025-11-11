@@ -1,0 +1,269 @@
+* { 
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    color: #757675;
+}
+
+h2 { font-weight: 600; font-size: 24px; }
+hr { background-color: #FCFFED; opacity: 100%; width: 100%; height: 0.2rem !important; }
+.container { margin-bottom: 2rem; }
+.color-primario { color: #6A8E58; }
+.color-verde-claro { color: #B2BCB6; }
+.color-secundario { color: #FCFFED; }
+.color-gris-oscuro { color: #757675; }
+.btn-principal { background-color: #6A8E58; border: 3px solid #B2BCB6; color: #FCFFED; border-radius: 8px; height: 50px; width: 100%; font-weight: 600; font-size: 14px; }
+.btn-principal a { text-decoration: none; color: #FCFFED; font-weight: 600; font-size: 14px; }
+.btn-secundario { background-color: #FCFFED; border: 3px solid #6A8E58; color: #6A8E58; border-radius: 8px; height: 50px; width: 100%; font-weight: 600; font-size: 14px; }
+
+.bg-light { background-color: #FCFFED !important; border-bottom: 3px solid #6A8E58; }
+.container-logo-empresa img { border: 5px solid #6A8E58; border-radius: 1rem; }
+.container-hero-home { background-image: url("../img/material-visual/image-hero-home.png"); background-size: cover; background-position: center; background-repeat: no-repeat;  }
+.container-hero-home { padding: 24px 16px; text-align: center; margin-bottom: 2rem; }
+.container-paragraph-home { background-color: #6A8E58; opacity: 80%; border-radius: 2rem; border: 3px solid #FCFFED; margin: 1rem 0; padding: 1.5rem; }
+.container-paragraph-home p { color: #FCFFED; text-align: left; }
+.title-home-paragraph { font-size: 16px; font-weight: 600; }
+.home-paragraph { margin-bottom: 1rem; }
+.container-footer { background-color: #6A8E58; padding: 24px 16px; border-radius: 0.9rem 0.9rem 0 0; border-top: 4px solid #B2BCB6;}
+.container-footer a, .container-footer p { color: #FCFFED; }
+.container-footer ul { padding: 0; }
+.container-footer ul li { list-style: none; margin-bottom: 0.8rem; font-weight: 500; }
+.container-footer ul li a { text-decoration: none; }
+
+.title-footer { font-weight: 700; margin-bottom: 0.5rem; }
+.paragraph-footer { font-style: italic; }
+.title-rrss { text-align: center; font-weight: 600; font-size: 18px; }
+.container-rrss, .container-owner { text-align: center; }
+.container-owner p { margin: 0; }
+.container-rrss img { width: 25px; height: 25px; }
+.container-rrss img:nth-child(2) { margin: 0 0.5rem; }
+.carousel-item { height: 300px; }
+
+
+.carrusel-product { width: 100%; margin-bottom: 2rem; position: relative; }
+.carrusel-product .ventana-product .card-product a { display: flex; width: auto; height: auto; }
+.carrusel-product .ventana-product .card-product, .carrusel-product .ventana-product .card-product img { width: 300px; height: 300px; border-radius: 1rem; margin-bottom: 1rem; }
+.carrusel-product .ventana-product .card-product img { border: 3px solid #6A8E58;  }
+.container-products .card-product .container-image-product { display: flex; justify-content: center; }
+.container-products .card-product .container-image-product .image-card-product { background-image: url("../img/material-visual/ibc-ejemp-07.png"); background-position: center; background-size: cover; background-repeat: no-repeat; width: 300px; height: 300px; border: 3px solid #6A8E58; border-radius: 1rem; margin-bottom: 1rem;}
+.container-products .card-product { margin-bottom: 2rem; }
+.container-products .card-product .container-image { display: flex; justify-content: center; }
+/* Detalle de producto */
+.container-products-detail, .container-products-detail .card-product { display: flex; flex-direction: column; }
+.container-products-detail .card-product .container-image { display: flex; justify-content: center; }
+.container-products-detail .card-product .container-image .image-card-product { background-image: url("../img/material-visual/ibc-ejemp-07.png"); background-position: center; background-size: cover; background-repeat: no-repeat; width: 300px; height: 300px; border: 3px solid #6A8E58; border-radius: 1rem; margin-bottom: 1rem;}
+.container-products-detail .container-button-product-detail { margin-bottom: 2rem; }
+
+.ventana-product {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.ventana-product::-webkit-scrollbar {
+  display: none;
+}
+
+.container-buttons-nav, .container-buttons-nav-client { display: flex; justify-content: space-between; position: absolute; top: 130px; z-index: 1; width: 100%;  }
+.container-buttons-nav-client { top: 150px; }
+.nav {
+  background-color: #FCFFED;
+  border: 2px solid #B2BCB6;
+  opacity: 0.5;
+  font-size: 24px;
+  font-weight: 600;
+  color: #6A8E58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.pista-product {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: auto;
+}
+
+.slide-product {
+  width: 100%;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+
+.indicadores-product {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicadores-product span {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicadores-product .activo {
+  background-color: #6A8E58;
+}
+/* 
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ventana {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pista {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 900px;
+} */
+
+/* .pista {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+} */
+
+.card-client { background-color: #FCFFED; border: 3px solid #B2BCB6; width: 100%; height: auto; text-align: center; padding: 1rem; border-radius: 0.5rem;  }
+.card-client .image-card  { width: 100%; margin-bottom: 1rem; }
+.card-client .title-card { font-weight: 600; font-size: 1.1rem; }
+
+
+
+.carrusel {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.ventana {
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: space-around;
+
+}
+
+.pista {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 900px;
+}
+
+.slide {
+  width: 100%;
+  text-align: center;
+  margin-right: 1rem;
+}
+.slide:last-child {
+  margin-right: 0;
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicadores span {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicadores .activo {
+  background-color: #6A8E58;
+}
+
+/* Contact */
+.container-form-contact { display: flex; }
+.container-form-contact form { width: 100%; }
+.form-group-input { display: flex; flex-direction: column; margin-bottom: 1rem; }
+.form-group-input label { font-weight: 600; margin-bottom: 0.4rem; }
+.form-group-input input, .form-group-input textarea { border: 2px solid #6A8E58; height: 40px; border-radius: 0.3rem; }
+.container-button-form-contact { margin-top: 2rem; }
+/*Banner contacto*/
+.container-banner .banner-contact, .container-banner .banner-product { display: flex; border-radius: 1rem; border: 3px solid #6A8E58; background-color: #FCFFED; padding: 1rem; }
+
+
+/*Cotizador*/
+.container-products-cotizador .container-product { background-color: #6A8E58; border: 3px solid #757675; width: 100%; height: auto; border-radius: 1rem; display: flex; margin-bottom: 1rem; gap: 8px; padding: 1.2rem;}
+.container-products-cotizador .container-product p, .container-products-cotizador .container-product span { color: #FCFFED; }
+.container-products-cotizador .container-product img { width: 100px; height: 100px; border-radius: 0.5rem; border: 3px solid #FCFFED; }
+.container-button-cotizador { display: flex; flex-direction: column-reverse; gap: 1rem; }
+
+@media (max-width: 768px) {
+  .hidden-md-down { display: none; }
+}
+ 
+@media (min-width: 768px) {
+  .hidden-md-up { display: none; }
+  /* .container { width: 100%; max-width: 1220px; } */
+  .container-hero-home { background-image: url("../img/material-visual/image-hero-home-tablet.png"); margin-bottom: 2rem }
+  .container-paragraph-home { background-color: transparent; border: 0; }
+  .container-text-hero-home { background-color: #6A8E58; opacity: 80%; border-radius: 2rem; border: 3px solid #FCFFED;  padding: 1.5rem; margin: 2rem auto; width: 600px; }
+  .btn-principal { max-width: 400px; }
+
+  /* HOME */
+  .product-home, .client-home { display: flex; justify-content: space-between; gap: 8px; }
+  img.image-card-product  { width: 230px; height: 230px; }
+  .container-text-hero-home { padding: 0; }
+  .container-about-us p { margin-bottom: 2rem; }
+
+  /* Producto*/
+  .container-products .card-product { display: flex; gap: 4rem; border-radius: 1rem; border: 5px solid #6A8E58; background-color: #FCFFED; }
+  .container-products .card-product .container-image-product .image-card-product  { background-image: url("../img/material-visual/ibc-ejemp-06.png"); background-position: center; background-size: cover; background-repeat: no-repeat; width: 400px; height: 250px; border: 0; margin: 0; border-radius: 0.6rem 0 0 0.6rem; mask-image: linear-gradient(to right, black 50%, transparent); mask-size: 100% 100%; mask-repeat: no-repeat; }
+  .container-products .card-product .container-information-product { display: flex; flex-direction: column; justify-content: center; }
+  
+  /*Banners*/
+  .container-banner .banner-contact, .container-banner .banner-product { display: flex; border-radius: 1rem; border: 5px solid #6A8E58; background-color: #FCFFED; padding: 0; }
+  .container-banner .banner-contact .container-information-product, .container-banner .banner-product .container-information-product { display: flex; flex-direction: column; justify-content: center; padding: 1rem; }
+  
+  /*Banner contacto*/
+  .container-banner .banner-contact .container-image-contact .image-banner-contact  { background-image: url("../img/material-visual/escritorio-de-oficina-con-ordenador-portatil-y-hombre-de-negocios.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; width: 300px; height: 250px; border: 0; margin: 0; border-radius:0 0.6rem 0.6rem 0; mask-image: linear-gradient(to left, black 50%, transparent); mask-size: 100% 100%; mask-repeat: no-repeat; }
+  .container-banner .banner-contact .btn-principal { max-width: 300px; }
+  /*Banner producto*/
+  .container-banner .banner-product .container-image-product .image-banner-contact { background-image: url("../img/material-visual/ibc-ejemp-06.png"); background-position: center; background-size: cover; background-repeat: no-repeat; width: 320px; height: 250px; border: 0; margin: 0; border-radius:0 0.6rem 0.6rem 0; mask-image: linear-gradient(to left, black 50%, transparent); mask-size: 100% 100%; mask-repeat: no-repeat; }
+  .container-banner .banner-product { justify-content: space-between; }
+  .container-banner .banner-product .container-information-product { padding: 1rem 2rem; }
+  .container-banner .banner-product p { margin-bottom: 0.5rem; }
+  .container-banner .banner-product .btn-principal { max-width: 280px; }
+
+  /*Producto Detail*/
+  .container-products-detail, .container-products-detail .card-product { flex-direction: row; gap: 1rem; }
+  .container-products-detail .container-description  { width: 390px; }
+
+  /*Contacto*/
+  .container-button-contact { display: flex; justify-content: center; }
+  .container-form-contact { justify-content: center; }
+  .container-form-contact form { max-width: 900px; }
+  .container-button-form-contact { justify-content: center; display: flex; }
+
+  /*Cotizador*/
+  .container-button-cotizador { display: flex; flex-direction: row; justify-content: end; gap: 1rem; }
+
+  /* Footer */
+  .container-footer { padding: 3rem 4rem; }
+}
+
+@media (min-width: 992px) {
+  .container { max-width: 900px; }
+}
