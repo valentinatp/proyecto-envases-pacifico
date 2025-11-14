@@ -80,3 +80,67 @@ function avanzarCarruselProduct() {
 crearIndicadoresProduct();
 actualizarCarruselProduct();
 setInterval(avanzarCarruselProduct, 5000); // cambia cada 4 segundos
+
+
+/* Formulario contacto */
+// const form = document.getElementById('form');
+// const submitBtn = form.querySelector('button[type="submit"]');
+
+// form.addEventListener('submit', async (e) => {
+//     e.preventDefault();
+
+//     const formData = new FormData(form);
+//     formData.append("access_key", "d5b903e7-6381-4de1-80af-0c47330d7bd7");
+
+//     const originalText = submitBtn.textContent;
+
+//     submitBtn.textContent = "Sending...";
+//     submitBtn.disabled = true;
+
+//     try {
+//         const response = await fetch("https://api.web3forms.com/submit", {
+//             method: "POST",
+//             body: formData
+//         });
+
+//         const data = await response.json();
+
+//         if (response.ok) {
+//             alert("El mensaje ha sido enviado con éxito!");
+//             form.reset();
+//         } else {
+//             alert("Error: " + data.message);
+//         }
+
+//     } catch (error) {
+//         alert("Hubo un error, por favor intenta de nuevo.");
+//     } finally {
+//         submitBtn.textContent = originalText;
+//         submitBtn.disabled = false;
+//     }
+// });
+
+/* Conexion con servidor de correo */
+document.getElementById("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const datos = new FormData(this);
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: datos
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      alert("Formulario enviado correctamente");
+      clearContainer();
+    } else {
+      alert("Error al enviar el formulario");
+    }
+  });
+});
+
+const clearContainer = () => {
+    const elContainerFormContact = document.querySelector('#containerFormContact');
+    elContainerFormContact.innerHTML = '';
+}
